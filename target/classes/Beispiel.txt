@@ -1,0 +1,7 @@
+Hier steht ein ganz toller Text.
+Man kann ihn mit einem Reader einlesen.
+Oder man lässt es, wenn er nicht von Interesse ist.
+Ende
+Ach, nein doch noch nicht.
+Hier geht es noch weiter.
+Ende

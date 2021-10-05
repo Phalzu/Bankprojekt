@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import java.lang.String?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.bankprojekt.oberflaeche.KontoController">
+   <children>
+      <FlowPane fx:id="containerOne" alignment="CENTER" layoutY="5.0" prefHeight="78.0" prefWidth="530.0">
+         <children>
+            <Label fx:id="lblUeberschrift" text="Ein Konto verändern">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </FlowPane>
+      <GridPane fx:id="containerTwo" layoutY="100.0" prefHeight="318.0" prefWidth="600.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="407.0" minWidth="10.0" prefWidth="249.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="504.0" minWidth="0.0" prefWidth="270.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="504.0" minWidth="10.0" prefWidth="82.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblKontonr" text="Kontonummer:" />
+            <Label fx:id="lblKontostand" text="Kontostand:" GridPane.rowIndex="1" />
+            <Label fx:id="lblGesperrt" text="Gesperrt:" GridPane.rowIndex="2" />
+            <Label fx:id="lblKontonrAusgabe" text="$kontonr" GridPane.columnIndex="1" />
+            <Label fx:id="lblKontostandAusgabe" text="$kontostand" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <CheckBox fx:id="cbGesperrtAusgabe" mnemonicParsing="false" text=" " GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="lblAdresse" text="Adresse:" GridPane.rowIndex="3" />
+            <Label fx:id="lblAdresseAusgabe" text="$kundeAdresse" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="lblWelcome" alignment="CENTER" text="Wilkommen liebe Benutzer" textFill="#dd0b0b" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <padding>
+                  <Insets left="70.0" top="20.0" />
+               </padding>
+            </Label>
+         </children>
+      </GridPane>
+      <FlowPane fx:id="containerThree" alignment="CENTER" hgap="70.0" layoutY="440.0" prefHeight="78.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="textFieldMoney" alignment="CENTER" promptText="0.0" />
+            <Button fx:id="btnEinzahlen" mnemonicParsing="false" text="Einzahlen" />
+            <Button fx:id="btnAbheben" mnemonicParsing="false" text="Abheben" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </FlowPane>
+   </children>
+</AnchorPane>
